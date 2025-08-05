@@ -4,74 +4,76 @@ import { Wrench, Truck, Building2 } from "lucide-react";
 
 const UnitsSection = () => {
   const units = [
+    // Linha Rodoviária
     {
-      name: "Bosch CP1",
+      name: "Unidade UP Mercedes",
       category: "Rodoviária",
-      description: "Sistema Common Rail de primeira geração",
-      applications: ["Caminhões Mercedes", "Iveco Daily"],
+      description: "Sistema de injeção eletrônica Mercedes",
+      applications: ["Caminhões Mercedes", "Veículos comerciais"],
       icon: <Truck className="w-8 h-8" />
     },
     {
-      name: "Bosch CP3",
-      category: "Rodoviária", 
-      description: "Sistema Common Rail avançado",
-      applications: ["Volvo FH", "Scania R-Series"],
-      icon: <Truck className="w-8 h-8" />
-    },
-    {
-      name: "Delphi DFP1",
+      name: "Unidade UI Iveco",
       category: "Rodoviária",
-      description: "Sistema de injeção eletrônica",
-      applications: ["Ford Cargo", "VW Constellation"],
+      description: "Sistema de injeção Iveco",
+      applications: ["Iveco Daily", "Caminhões leves"],
       icon: <Truck className="w-8 h-8" />
     },
     {
-      name: "Denso HP3",
+      name: "Unidade UI Scania",
       category: "Rodoviária",
-      description: "Injeção de alta pressão",
-      applications: ["Hino", "Toyota Dyna"],
+      description: "Sistema de injeção Scania",
+      applications: ["Scania R-Series", "Caminhões pesados"],
       icon: <Truck className="w-8 h-8" />
     },
     {
-      name: "Siemens VDO",
+      name: "Unidade EUI Volvo D12 A/C",
       category: "Rodoviária",
-      description: "Sistema de injeção Continental",
-      applications: ["MAN TGX", "DAF XF"],
+      description: "Sistema EUI Volvo D12 com A/C",
+      applications: ["Volvo FH", "Volvo FM"],
       icon: <Truck className="w-8 h-8" />
     },
     {
-      name: "CAT C7 HEUI",
+      name: "Unidade EUI Volvo D12 D",
+      category: "Rodoviária",
+      description: "Sistema EUI Volvo D12 versão D",
+      applications: ["Volvo FH", "Volvo FM"],
+      icon: <Truck className="w-8 h-8" />
+    },
+    {
+      name: "Unidade EUI Volvo D13",
+      category: "Rodoviária",
+      description: "Sistema EUI Volvo D13",
+      applications: ["Volvo FH", "Volvo FMX"],
+      icon: <Truck className="w-8 h-8" />
+    },
+    {
+      name: "Unidade DAF",
+      category: "Rodoviária",
+      description: "Sistema de injeção DAF",
+      applications: ["DAF XF", "DAF CF"],
+      icon: <Truck className="w-8 h-8" />
+    },
+    // Linha CAT
+    {
+      name: "Caterpillar C7/C9",
       category: "CAT",
-      description: "Sistema hidráulico eletrônico",
+      description: "Sistema HEUI Caterpillar C7 e C9",
       applications: ["Escavadeiras CAT", "Tratores CAT"],
       icon: <Building2 className="w-8 h-8" />
     },
     {
-      name: "CAT C9 ACERT",
-      category: "CAT", 
-      description: "Tecnologia ACERT avançada",
-      applications: ["Retroescavadeiras", "Compactadores"],
-      icon: <Building2 className="w-8 h-8" />
-    },
-    {
-      name: "CAT C13 ACERT",
+      name: "Caterpillar C15/C18",
       category: "CAT",
-      description: "Motor pesado ACERT",
-      applications: ["Caminhões fora de estrada", "Geradores"],
-      icon: <Building2 className="w-8 h-8" />
-    },
-    {
-      name: "CAT 3126B",
-      category: "CAT",
-      description: "Sistema eletrônico HEUI",
-      applications: ["Ônibus", "Caminhões médios"],
-      icon: <Building2 className="w-8 h-8" />
-    },
-    {
-      name: "CAT C15 ACERT",
-      category: "CAT",
-      description: "Motor de alta performance",
+      description: "Sistema ACERT Caterpillar C15 e C18",
       applications: ["Mineração", "Construção pesada"],
+      icon: <Building2 className="w-8 h-8" />
+    },
+    {
+      name: "Caterpillar 3126",
+      category: "CAT",
+      description: "Sistema eletrônico CAT 3126",
+      applications: ["Ônibus", "Caminhões médios"],
       icon: <Building2 className="w-8 h-8" />
     }
   ];
