@@ -23,19 +23,19 @@ All colors MUST be HSL.
 
     /* Semantic Colors */
     --primary: var(--brand-yellow);
-    --primary-foreground: var(--brand-dark);
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: var(--brand-light-brown);
+    --secondary: 30 24% 40%;
     --secondary-foreground: var(--brand-white);
 
     --accent: var(--brand-brown);
     --accent-foreground: var(--brand-white);
 
-    --muted: var(--brand-beige);
-    --muted-foreground: var(--brand-dark);
+    --muted: 30 17% 90%;
+    --muted-foreground: 0 0% 15%;
 
     --card: var(--brand-white);
-    --card-foreground: var(--brand-dark);
+    --card-foreground: 0 0% 5%;
 
     --popover: var(--brand-white);
     --popover-foreground: var(--brand-dark);
@@ -80,22 +80,22 @@ All colors MUST be HSL.
 
   .dark {
     --background: var(--brand-dark);
-    --foreground: var(--brand-white);
+    --foreground: 0 0% 95%;
 
-    --card: var(--brand-dark);
-    --card-foreground: var(--brand-white);
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
 
     --popover: var(--brand-dark);
     --popover-foreground: var(--brand-white);
 
     --primary: var(--brand-yellow);
-    --primary-foreground: var(--brand-dark);
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: var(--brand-brown);
+    --secondary: 30 24% 35%;
     --secondary-foreground: var(--brand-white);
 
-    --muted: var(--brand-brown);
-    --muted-foreground: var(--brand-beige);
+    --muted: 30 15% 20%;
+    --muted-foreground: 0 0% 80%;
 
     --accent: var(--brand-light-brown);
     --accent-foreground: var(--brand-white);

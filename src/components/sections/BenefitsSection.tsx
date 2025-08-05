@@ -15,18 +15,18 @@ const BenefitsSection = () => {
     },
     {
       icon: <Users className="w-12 h-12 text-primary" />,
-      title: "Mentoria Especializada",
-      description: "Aprenda diretamente com quem já formou centenas de profissionais e tem reconhecimento no mercado nacional."
+      title: "Grupo VIP de Alunos",
+      description: "Faça parte de uma comunidade exclusiva para trocar experiências, tirar dúvidas e fazer networking com outros profissionais."
     },
     {
       icon: <Award className="w-12 h-12 text-primary" />,
-      title: "Certificação Reconhecida",
-      description: "Receba certificado que comprova sua especialização e abre portas no mercado de trabalho."
+      title: "Apostila Técnica Completa",
+      description: "Receba material didático especializado com todas as informações técnicas, diagramas e procedimentos detalhados."
     },
     {
       icon: <Clock className="w-12 h-12 text-primary" />,
-      title: "Flexibilidade Total",
-      description: "Estude no seu ritmo com acesso vitalício ao conteúdo e aulas práticas gravadas em alta qualidade."
+      title: "Acesso Vitalício",
+      description: "Tenha acesso para sempre ao conteúdo completo, atualizações e novas aulas que forem adicionadas ao curso."
     },
     {
       icon: <CheckCircle className="w-12 h-12 text-primary" />,
