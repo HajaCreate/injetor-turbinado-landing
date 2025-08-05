@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Design system for injection unit repair course landing page
+Colors based on brand palette: #fcd414, #151515, #ffffff, #71440c, #b38c67, #c3b2a6
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
+    /* Background & Basic Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 8%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Brand Colors */
+    --brand-yellow: 52 96% 53%;      /* #fcd414 */
+    --brand-dark: 0 0% 8%;           /* #151515 */
+    --brand-white: 0 0% 100%;        /* #ffffff */
+    --brand-brown: 30 73% 24%;       /* #71440c */
+    --brand-light-brown: 30 24% 55%; /* #b38c67 */
+    --brand-beige: 30 17% 72%;       /* #c3b2a6 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Semantic Colors */
+    --primary: var(--brand-yellow);
+    --primary-foreground: var(--brand-dark);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --secondary: var(--brand-light-brown);
+    --secondary-foreground: var(--brand-white);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent: var(--brand-brown);
+    --accent-foreground: var(--brand-white);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: var(--brand-beige);
+    --muted-foreground: var(--brand-dark);
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --card: var(--brand-white);
+    --card-foreground: var(--brand-dark);
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --popover: var(--brand-white);
+    --popover-foreground: var(--brand-dark);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: var(--brand-white);
 
-    --radius: 0.5rem;
+    --border: 30 17% 85%;
+    --input: 30 17% 85%;
+    --ring: var(--brand-yellow);
+
+    /* Custom Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-dark)), hsl(var(--brand-brown)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--brand-yellow)), hsl(var(--brand-light-brown)));
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--brand-beige)), hsl(var(--brand-white)));
+
+    /* Shadows */
+    --shadow-brand: 0 10px 30px -10px hsl(var(--brand-yellow) / 0.3);
+    --shadow-elegant: 0 20px 50px -10px hsl(var(--brand-dark) / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +79,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: var(--brand-dark);
+    --foreground: var(--brand-white);
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: var(--brand-dark);
+    --card-foreground: var(--brand-white);
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: var(--brand-dark);
+    --popover-foreground: var(--brand-white);
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: var(--brand-yellow);
+    --primary-foreground: var(--brand-dark);
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: var(--brand-brown);
+    --secondary-foreground: var(--brand-white);
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: var(--brand-brown);
+    --muted-foreground: var(--brand-beige);
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: var(--brand-light-brown);
+    --accent-foreground: var(--brand-white);
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: var(--brand-white);
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: var(--brand-brown);
+    --input: var(--brand-brown);
+    --ring: var(--brand-yellow);
   }
 }
 
