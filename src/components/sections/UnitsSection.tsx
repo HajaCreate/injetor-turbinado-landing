@@ -2,18 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Wrench, Truck, Building2 } from "lucide-react";
 
-// Import das imagens das unidades
-import mercedesUp from "@/assets/units/mercedes-up.jpg";
-import ivecoUi from "@/assets/units/iveco-ui.jpg";
-import scaniaUi from "@/assets/units/scania-ui.jpg";
-import volvoD12Ac from "@/assets/units/volvo-d12-ac.jpg";
-import volvoD12D from "@/assets/units/volvo-d12-d.jpg";
-import volvoD13 from "@/assets/units/volvo-d13.jpg";
-import daf from "@/assets/units/daf.jpg";
-import catC7C9 from "@/assets/units/cat-c7-c9.jpg";
-import catC15C18 from "@/assets/units/cat-c15-c18.jpg";
-import cat3126 from "@/assets/units/cat-3126.jpg";
-
 const UnitsSection = () => {
   const units = [
     // Linha Rodoviária
@@ -22,56 +10,49 @@ const UnitsSection = () => {
       category: "Rodoviária",
       description: "Sistema de injeção eletrônica Mercedes",
       applications: ["Caminhões Mercedes", "Veículos comerciais"],
-      icon: <Truck className="w-8 h-8" />,
-      image: mercedesUp
+      icon: <Truck className="w-8 h-8" />
     },
     {
       name: "Unidade UI Iveco",
       category: "Rodoviária",
       description: "Sistema de injeção Iveco",
       applications: ["Iveco Daily", "Caminhões leves"],
-      icon: <Truck className="w-8 h-8" />,
-      image: ivecoUi
+      icon: <Truck className="w-8 h-8" />
     },
     {
       name: "Unidade UI Scania",
       category: "Rodoviária",
       description: "Sistema de injeção Scania",
       applications: ["Scania R-Series", "Caminhões pesados"],
-      icon: <Truck className="w-8 h-8" />,
-      image: scaniaUi
+      icon: <Truck className="w-8 h-8" />
     },
     {
       name: "Unidade EUI Volvo D12 A/C",
       category: "Rodoviária",
       description: "Sistema EUI Volvo D12 com A/C",
       applications: ["Volvo FH", "Volvo FM"],
-      icon: <Truck className="w-8 h-8" />,
-      image: volvoD12Ac
+      icon: <Truck className="w-8 h-8" />
     },
     {
       name: "Unidade EUI Volvo D12 D",
       category: "Rodoviária",
       description: "Sistema EUI Volvo D12 versão D",
       applications: ["Volvo FH", "Volvo FM"],
-      icon: <Truck className="w-8 h-8" />,
-      image: volvoD12D
+      icon: <Truck className="w-8 h-8" />
     },
     {
       name: "Unidade EUI Volvo D13",
       category: "Rodoviária",
       description: "Sistema EUI Volvo D13",
       applications: ["Volvo FH", "Volvo FMX"],
-      icon: <Truck className="w-8 h-8" />,
-      image: volvoD13
+      icon: <Truck className="w-8 h-8" />
     },
     {
       name: "Unidade DAF",
       category: "Rodoviária",
       description: "Sistema de injeção DAF",
       applications: ["DAF XF", "DAF CF"],
-      icon: <Truck className="w-8 h-8" />,
-      image: daf
+      icon: <Truck className="w-8 h-8" />
     },
     // Linha CAT
     {
@@ -79,24 +60,21 @@ const UnitsSection = () => {
       category: "CAT",
       description: "Sistema HEUI Caterpillar C7 e C9",
       applications: ["Escavadeiras CAT", "Tratores CAT"],
-      icon: <Building2 className="w-8 h-8" />,
-      image: catC7C9
+      icon: <Building2 className="w-8 h-8" />
     },
     {
       name: "Caterpillar C15/C18",
       category: "CAT",
       description: "Sistema ACERT Caterpillar C15 e C18",
       applications: ["Mineração", "Construção pesada"],
-      icon: <Building2 className="w-8 h-8" />,
-      image: catC15C18
+      icon: <Building2 className="w-8 h-8" />
     },
     {
       name: "Caterpillar 3126",
       category: "CAT",
       description: "Sistema eletrônico CAT 3126",
       applications: ["Ônibus", "Caminhões médios"],
-      icon: <Building2 className="w-8 h-8" />,
-      image: cat3126
+      icon: <Building2 className="w-8 h-8" />
     }
   ];
 
@@ -125,42 +103,35 @@ const UnitsSection = () => {
               key={index}
               className="relative overflow-hidden transition-all duration-300 hover:shadow-elegant hover:-translate-y-1 border-border hover:border-primary/50"
             >
-              <CardContent className="p-0">
-                {/* Imagem da unidade */}
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={unit.image} 
-                    alt={unit.name}
-                    className="w-full h-full object-cover"
-                  />
-                  <Badge 
-                    className={`absolute top-3 left-3 ${
-                      unit.category === 'CAT' 
-                        ? 'bg-accent text-accent-foreground' 
-                        : 'bg-secondary text-secondary-foreground'
-                    }`}
-                  >
-                    {unit.category}
-                  </Badge>
+              <CardContent className="p-6 text-center">
+                <Badge 
+                  className={`mb-4 ${
+                    unit.category === 'CAT' 
+                      ? 'bg-accent text-accent-foreground' 
+                      : 'bg-secondary text-secondary-foreground'
+                  }`}
+                >
+                  {unit.category}
+                </Badge>
+                
+                <div className="text-primary mb-4 flex justify-center">
+                  {unit.icon}
                 </div>
                 
-                {/* Conteúdo do card */}
-                <div className="p-6 text-center">
-                  <h3 className="text-lg font-bold text-card-foreground mb-3">
-                    {unit.name}
-                  </h3>
-                  
-                  <p className="text-sm text-muted-foreground mb-4">
-                    {unit.description}
-                  </p>
-                  
-                  <div className="space-y-1">
-                    {unit.applications.map((app, appIndex) => (
-                      <p key={appIndex} className="text-xs text-card-foreground font-medium">
-                        • {app}
-                      </p>
-                    ))}
-                  </div>
+                <h3 className="text-lg font-bold text-card-foreground mb-3">
+                  {unit.name}
+                </h3>
+                
+                <p className="text-sm text-muted-foreground mb-4">
+                  {unit.description}
+                </p>
+                
+                <div className="space-y-1">
+                  {unit.applications.map((app, appIndex) => (
+                    <p key={appIndex} className="text-xs text-card-foreground font-medium">
+                      • {app}
+                    </p>
+                  ))}
                 </div>
               </CardContent>
             </Card>
