@@ -1,0 +1,188 @@
+{
+  "theme_info": {
+    "name": "Curso Reparação Unidade Injetora",
+    "description": "Tema especializado para curso de reparação de unidades injetoras - design responsivo e otimizado para conversão",
+    "version": "1.0.0",
+    "author": "Curso UI",
+    "text_domain": "curso-ui",
+    "requires_wp": "5.0",
+    "tested_up_to": "6.4",
+    "requires_php": "7.4",
+    "license": "GPL v2 or later",
+    "tags": ["education", "business", "responsive", "custom-colors", "custom-logo", "custom-menu", "featured-images", "footer-widgets", "one-column", "two-columns", "left-sidebar", "right-sidebar", "threaded-comments", "translation-ready"]
+  },
+  "theme_features": {
+    "custom_logo": true,
+    "post_thumbnails": true,
+    "html5_support": ["search-form", "comment-form", "comment-list", "gallery", "caption"],
+    "automatic_feed_links": true,
+    "title_tag": true,
+    "custom_image_sizes": {
+      "unit-card": {"width": 400, "height": 300, "crop": true},
+      "hero-bg": {"width": 1920, "height": 1080, "crop": true}
+    }
+  },
+  "customizer_settings": {
+    "contact_section": {
+      "whatsapp_number": {
+        "default": "5511999999999",
+        "type": "text",
+        "label": "Número do WhatsApp"
+      },
+      "phone_number": {
+        "default": "5511999999999", 
+        "type": "text",
+        "label": "Número do Telefone"
+      },
+      "contact_email": {
+        "default": "contato@cursounidadeinjetora.com.br",
+        "type": "email",
+        "label": "Email de Contato"
+      }
+    }
+  },
+  "widget_areas": {
+    "sidebar-1": {
+      "name": "Sidebar Principal",
+      "description": "Widgets para a sidebar principal"
+    },
+    "footer-1": {
+      "name": "Footer Widget 1", 
+      "description": "Widgets para o footer"
+    }
+  },
+  "shortcodes": {
+    "whatsapp_button": {
+      "description": "Botão do WhatsApp",
+      "attributes": {
+        "text": "Falar no WhatsApp",
+        "message": "Olá! Gostaria de saber mais sobre o curso de reparação de unidade injetora.",
+        "class": "btn btn-primary"
+      },
+      "usage": "[whatsapp_button text=\"Falar Conosco\" message=\"Olá! Preciso de informações.\"]"
+    },
+    "phone_button": {
+      "description": "Botão de telefone",
+      "attributes": {
+        "text": "Ligar Agora",
+        "class": "btn btn-secondary"
+      },
+      "usage": "[phone_button text=\"Ligar Agora\"]"
+    }
+  },
+  "css_variables": {
+    ":root": {
+      "--primary": "hsl(34, 100%, 50%)",
+      "--primary-dark": "hsl(34, 100%, 40%)",
+      "--secondary": "hsl(210, 40%, 98%)",
+      "--muted": "hsl(210, 40%, 96%)",
+      "--accent": "hsl(210, 40%, 90%)",
+      "--destructive": "hsl(0, 84%, 60%)",
+      "--border": "hsl(214, 32%, 91%)",
+      "--input": "hsl(214, 32%, 91%)",
+      "--ring": "hsl(34, 100%, 50%)",
+      "--background": "hsl(0, 0%, 100%)",
+      "--foreground": "hsl(222, 84%, 5%)",
+      "--card": "hsl(0, 0%, 100%)",
+      "--card-foreground": "hsl(222, 84%, 5%)",
+      "--popover": "hsl(0, 0%, 100%)",
+      "--popover-foreground": "hsl(222, 84%, 5%)",
+      "--muted-foreground": "hsl(215, 16%, 47%)",
+      "--accent-foreground": "hsl(222, 84%, 5%)",
+      "--destructive-foreground": "hsl(210, 40%, 98%)",
+      "--brand-orange": "hsl(34, 100%, 50%)",
+      "--brand-dark": "hsl(222, 84%, 5%)",
+      "--brand-brown": "hsl(30, 20%, 25%)",
+      "--success": "hsl(142, 76%, 36%)",
+      "--warning": "hsl(38, 92%, 50%)",
+      "--info": "hsl(199, 89%, 48%)"
+    },
+    ".dark": {
+      "--background": "hsl(222, 84%, 5%)",
+      "--foreground": "hsl(210, 40%, 98%)",
+      "--card": "hsl(222, 84%, 5%)",
+      "--card-foreground": "hsl(210, 40%, 98%)",
+      "--popover": "hsl(222, 84%, 5%)",
+      "--popover-foreground": "hsl(210, 40%, 98%)",
+      "--muted": "hsl(217, 32%, 17%)",
+      "--muted-foreground": "hsl(215, 16%, 57%)",
+      "--accent": "hsl(217, 32%, 17%)",
+      "--accent-foreground": "hsl(210, 40%, 98%)",
+      "--destructive": "hsl(0, 62%, 30%)",
+      "--destructive-foreground": "hsl(210, 40%, 98%)",
+      "--border": "hsl(217, 32%, 17%)",
+      "--input": "hsl(217, 32%, 17%)",
+      "--ring": "hsl(34, 100%, 50%)"
+    }
+  },
+  "template_hierarchy": {
+    "index.php": "Template principal - página inicial",
+    "header.php": "Cabeçalho do site",
+    "footer.php": "Rodapé do site", 
+    "single.php": "Posts individuais",
+    "page.php": "Páginas estáticas",
+    "archive.php": "Páginas de arquivo (categorias, tags, etc.)",
+    "search.php": "Resultados de busca",
+    "404.php": "Página de erro 404"
+  },
+  "security_features": {
+    "login_error_obfuscation": true,
+    "file_editing_disabled": true,
+    "xmlrpc_disabled": true,
+    "wp_version_removal": true,
+    "emoji_scripts_removal": true,
+    "unnecessary_wp_head_cleanup": true
+  },
+  "performance_optimizations": {
+    "gutenberg_disabled_for_posts": true,
+    "wp_embed_script_removal": true,
+    "wp_block_library_dequeue": true,
+    "clean_wp_head": true
+  },
+  "seo_features": {
+    "custom_meta_tags": true,
+    "structured_data_ready": true,
+    "open_graph_ready": true,
+    "twitter_card_ready": true
+  },
+  "responsive_breakpoints": {
+    "mobile": "max-width: 768px",
+    "tablet": "max-width: 1024px", 
+    "desktop": "min-width: 1025px"
+  },
+  "color_scheme": {
+    "primary_brand": "#FF8C00",
+    "dark_brand": "#1a1a1a",
+    "brown_accent": "#8B4513",
+    "light_background": "#ffffff",
+    "muted_background": "#f8f9fa"
+  },
+  "installation_instructions": {
+    "step_1": "Baixe todos os arquivos do tema",
+    "step_2": "Crie um arquivo ZIP com todos os arquivos",
+    "step_3": "Acesse WordPress Admin > Aparência > Temas > Adicionar Novo",
+    "step_4": "Clique em 'Enviar Tema' e selecione o arquivo ZIP",
+    "step_5": "Ative o tema após a instalação",
+    "step_6": "Configure as opções em Personalizar > Informações de Contato"
+  },
+  "required_plugins": {
+    "recommended": [
+      "Contact Form 7",
+      "Yoast SEO",
+      "WP Rocket (cache)",
+      "Wordfence Security"
+    ],
+    "optional": [
+      "WooCommerce (para e-commerce)",
+      "Elementor (page builder)",
+      "Advanced Custom Fields"
+    ]
+  },
+  "browser_support": {
+    "chrome": "Últimas 2 versões",
+    "firefox": "Últimas 2 versões", 
+    "safari": "Últimas 2 versões",
+    "edge": "Últimas 2 versões",
+    "ie": "Não suportado"
+  }
+}
