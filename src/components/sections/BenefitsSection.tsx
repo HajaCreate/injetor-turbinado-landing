@@ -40,7 +40,7 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Por que Escolher Nosso <span className="text-primary">Curso?</span>
+            Por que Escolher Nosso <span className="text-secondary drop-shadow-sm font-black">Curso?</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Mais que um curso, é uma transformação profissional completa que vai elevar 

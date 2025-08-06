@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Domine a <span className="text-primary">Reparação de Unidade Injetora</span> 
+            Domine a <span className="text-primary drop-shadow-lg font-black">Reparação de Unidade Injetora</span> 
             com o Especialista do Mercado
           </h1>
           
@@ -49,17 +49,17 @@ const HeroSection = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto text-center">
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-              <div className="text-3xl font-bold text-primary mb-2">500+</div>
-              <div className="text-sm">Alunos Formados</div>
+            <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg border border-primary/30">
+              <div className="text-3xl font-bold text-primary drop-shadow-lg mb-2">500+</div>
+              <div className="text-sm text-white font-medium">Alunos Formados</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-              <div className="text-3xl font-bold text-primary mb-2">15+</div>
-              <div className="text-sm">Anos de Experiência</div>
+            <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg border border-primary/30">
+              <div className="text-3xl font-bold text-primary drop-shadow-lg mb-2">15+</div>
+              <div className="text-sm text-white font-medium">Anos de Experiência</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-              <div className="text-3xl font-bold text-primary mb-2">98%</div>
-              <div className="text-sm">Taxa de Satisfação</div>
+            <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg border border-primary/30">
+              <div className="text-3xl font-bold text-primary drop-shadow-lg mb-2">98%</div>
+              <div className="text-sm text-white font-medium">Taxa de Satisfação</div>
             </div>
           </div>
         </div>
