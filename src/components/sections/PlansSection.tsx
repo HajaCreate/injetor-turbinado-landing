@@ -9,7 +9,7 @@ const PlansSection = () => {
     price: "R$ 497",
     originalPrice: "R$ 697",
     description: "Domine completamente a reparação de unidades injetoras para caminhões, ônibus e veículos pesados rodoviários.",
-    features: ["20+ horas de aulas práticas", "Diagnóstico avançado de falhas", "Técnicas de desmontagem e montagem", "Calibração e teste de funcionamento", "Suporte técnico por 90 dias", "Certificado de conclusão", "Acesso vitalício ao conteúdo"],
+    features: ["20+ horas de aulas práticas", "Diagnóstico avançado de falhas", "Técnicas de desmontagem e montagem", "Calibração e teste de funcionamento", "Mercedes, Iveco, Scania, Volvo, Daf", "Certificado de conclusão", "Acesso vitalício ao conteúdo"],
     isPopular: false,
     buttonText: "Começar Agora"
   }, {
