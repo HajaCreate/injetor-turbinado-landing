@@ -83,7 +83,7 @@ const PlansSection = () => {
             e comece a faturar mais ainda hoje.
           </p>
           
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full font-semibold">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-[#71440c] px-6 py-3 rounded-full font-semibold">
             <Star className="w-5 h-5" />
             Oferta por tempo limitado - Últimas vagas!
           </div>
