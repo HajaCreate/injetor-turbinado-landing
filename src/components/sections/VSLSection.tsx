@@ -13,7 +13,7 @@ const VSLSection = () => {
           
           <div className="relative w-full max-w-3xl mx-auto aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
             <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/M3LlqfZUiyI"
               title="VSL - Reparação de Unidade Injetora"
               className="w-full h-full"
               frameBorder="0"
