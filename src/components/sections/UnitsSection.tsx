@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Wrench, Truck, Building2 } from "lucide-react";
 
 // Import das imagens das unidades
-import mercedesUp from "@/assets/units/mercedes-up.jpg";
+import mercedesInjector from "@/assets/units/mercedes-injector-new.jpg";
 import ivecoUi from "@/assets/units/iveco-ui.jpg";
 import scaniaUi from "@/assets/units/scania-ui.jpg";
 import volvoD12Ac from "@/assets/units/volvo-d12-ac.jpg";
@@ -22,7 +22,7 @@ const UnitsSection = () => {
     description: "Sistema de injeção eletrônica Mercedes",
     applications: ["Caminhões Mercedes", "Veículos comerciais"],
     icon: <Truck className="w-8 h-8" />,
-    image: mercedesUp
+    image: mercedesInjector
   }, {
     name: "Unidade UI Iveco",
     category: "Rodoviária",
